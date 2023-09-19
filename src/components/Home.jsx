@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -17,12 +18,17 @@ const Home = () => {
             I am having 2.5 years of Experience
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex justify-center items-center rounded-md bg-gradient-to-r mx-auto w-2/3 md:w-full from-cyan-500 to-blue-500 text-xl">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex justify-center items-center rounded-md bg-gradient-to-r mx-auto w-2/3 md:w-full from-cyan-500 to-blue-500 text-xl"
+            >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdKeyboardArrowRight size={30} />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>
